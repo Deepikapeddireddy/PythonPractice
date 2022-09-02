@@ -16,11 +16,13 @@ def caesar(start_text, shift_amount, cipher_direction):
       end_text += alphabet[new_position]
     
   print(f"Here's the {cipher_direction}d result: {end_text}")
+from turtle import clear
 from art import logo
 print(logo)
 
 ask = "yes"
 while ask=='yes':
+  clear()
   direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
   text = input("Type your message:\n").lower()
   shift = int(input("Type the shift number:\n"))
